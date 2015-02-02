@@ -54,15 +54,14 @@ handleData = (data, callback) ->
         .update {envelopeFingerprint: fingerprint}, callback
 
 createSignableEnvelope = (snapshotVal, callback) ->
-  options =
+  request
     uri: settings.host + settings.path
     method: 'POST'
     form: buildObjectToPost(snapshotVal)
     auth:
       user: process.env.SIGNABLE_API_KEY
       password: 'x'
-
-  request options, (error, response, body) ->
+  , (error, response, body) ->
     if error
       callback(error, null)
     else
