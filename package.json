@@ -1,0 +1,27 @@
+{
+  "name": "task-envelope-create",
+  "version": "0.0.0",
+  "description": "aws lambda function to create signable envelopes",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "async": "^0.9.0",
+    "dotenv": "^0.5.1",
+    "firebase": "^2.1.2",
+    "lodash": "^3.0.1",
+    "request": "^2.51.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/hillgate/task-envelope-create"
+  },
+  "author": "Adam Neary <contact@adamrneary.com> (http://adamrneary.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hillgate/task-envelope-create/issues"
+  },
+  "homepage": "https://github.com/hillgate/task-envelope-create"
+}
